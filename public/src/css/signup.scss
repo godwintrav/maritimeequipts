@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+$color-blue: #00aabe;
+$color-dblue: #096d79;
+$tran: all 0.3s ease-in-out;
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  &::after::before {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #002f41;
+  background: #fff url(/src/img/LoginSignup.png) center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.nav-bar {
+  background-color: #2b2a2b;
+  width: 100%;
+  height: 7vw;
+  display: flex;
+  align-items: center;
+  .content {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+
+    .logo {
+      margin: 0 auto;
+      img {
+        height: 5vw;
+        width: 5vw;
+      }
+    }
+    // .search-bar {
+    //   display: flex;
+    //   margin-left: 30%;
+    //   input {
+    //     outline: none;
+    //     height: 3vw;
+    //     width: 30vw;
+    //     padding: 0.5vw;
+    //     border-bottom-left-radius: 0.5vw;
+    //     border-top-left-radius: 0.5vw;
+    //     &::placeholder {
+    //       font-size: 1vw;
+    //     }
+    //   }
+    //   i {
+    //     cursor: pointer;
+    //     position: relative;
+    //     color: white;
+    //     background-color: $color-blue;
+    //     font-size: 1.8vw;
+    //     border-bottom-right-radius: 0.5vw;
+    //     border-top-right-radius: 0.5vw;
+    //     padding: 0.5vw;
+    //     transition: all 0.3s ease-in-out;
+    //     &:hover {
+    //       background-color: $color-dblue;
+    //     }
+    //   }
+    // }
+    // .account {
+    //   .user {
+    //     margin-left: 20%;
+    //     display: flex;
+    //     align-items: center;
+    //     color: white;
+    //     display: flex;
+    //     i {
+    //       &:nth-of-type(1) {
+    //         font-size: 2vw;
+    //       }
+    //       &:nth-of-type(2) {
+    //         font-size: 1vw;
+    //         margin-left: 10%;
+    //       }
+    //     }
+    //     h1 {
+    //       margin-left: 10%;
+    //       font-size: 2vw;
+    //     }
+    //   }
+    //   .login {
+    //     position: absolute;
+    //     color: white;
+    //   }
+    // }
+  }
+}
+
+main {
+  margin-top: 3%;
+  margin-left: 19%;
+  margin-right: 10%;
+  .intro {
+    margin-bottom: 5%;
+    margin-left: 35%;
+    width: max-content;
+    h1 {
+      font-size: 3vw;
+      font-weight: bold;
+      color: white;
+    }
+  }
+  input {
+    padding: 1vw;
+    border-radius: 0.5vw;
+    outline: none;
+    width: 25vw;
+    height: 3vw;
+    margin-bottom: 10%;
+    font-size: 1vw;
+    border: none;
+    &::placeholder {
+      font-size: 1vw;
+    }
+    &:focus {
+      box-shadow: 0px 3px 12px 10px $color-blue;
+    }
+  }
+  .submit {
+    margin-bottom: 0;
+
+    margin-left: 18%;
+    background-color: $color-blue;
+    font-size: 1.5vw;
+    color: white;
+    outline: none;
+    padding: 0.5vw;
+    width: 50%;
+    transition: $tran;
+    &:hover {
+      background-color: $color-dblue;
+    }
+  }
+  .alrdy-user {
+    margin-top: 5%;
+    margin-left: 26%;
+
+    font-size: 1.5vw;
+    color: white;
+    a {
+      text-decoration: none;
+      color: $color-blue;
+      transition: $tran;
+      &:hover {
+        color: $color-dblue;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 3%;
+    margin-left: 19%;
+    margin-right: 10%;
+    .intro {
+      margin-bottom: 5%;
+      margin-left: 35%;
+      width: max-content;
+      h1 {
+        font-size: 3vw;
+        font-weight: bold;
+        color: white;
+      }
+    }
+    input {
+      padding: 1vw;
+      border-radius: 0.5vw;
+      outline: none;
+      width: 25vw;
+      height: 3vw;
+      margin-bottom: 10%;
+      font-size: 1vw;
+      border: none;
+      &::placeholder {
+        font-size: 1vw;
+      }
+      &:focus {
+        box-shadow: 0px 3px 12px 10px $color-blue;
+      }
+    }
+
+    .submit {
+      margin-bottom: 0;
+
+      margin-left: 18%;
+      background-color: $color-blue;
+      font-size: 1.5vw;
+      color: white;
+      outline: none;
+      padding: 0.5vw;
+      width: 50%;
+      transition: $tran;
+      &:hover {
+        background-color: $color-dblue;
+      }
+    }
+    .alrdy-user {
+      margin-top: 5%;
+      margin-left: 26%;
+
+      font-size: 1.5vw;
+      color: white;
+      a {
+        text-decoration: none;
+        color: $color-blue;
+        transition: $tran;
+        &:hover {
+          color: $color-dblue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-bar {
+    background-color: #2b2a2b;
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    .content {
+      display: flex;
+      align-items: center;
+      margin-left: 5%;
+      margin-right: 5%;
+      width: 100%;
+
+      .logo {
+        margin: 0 auto;
+        img {
+          height: 7vw;
+          width: 7vw;
+        }
+      }
+    }
+  }
+
+  main {
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+    .intro {
+      margin-bottom: 5%;
+      margin-left: 35%;
+      width: max-content;
+      h1 {
+        font-size: 4vw;
+        font-weight: bold;
+        color: white;
+      }
+    }
+    input {
+      padding: 1vw;
+      border-radius: 1vw;
+      outline: none;
+      width: 100%;
+      height: 6vw;
+      margin-bottom: 3%;
+      font-size: 3vw;
+      border: none;
+      &::placeholder {
+        font-size: 3vw;
+      }
+      &:focus {
+        box-shadow: 0px 2px 5px 1px $color-blue;
+      }
+    }
+    .submit {
+      margin-top: 5%;
+      margin-left: 23%;
+      background-color: $color-blue;
+      font-size: 3vw;
+      color: white;
+      outline: none;
+      padding: 0.5vw;
+      width: 50%;
+      transition: $tran;
+
+      &:active {
+        background-color: $color-dblue;
+      }
+    }
+    .alrdy-user {
+      margin-top: 5%;
+      margin-left: 9%;
+
+      font-size: 3vw;
+      color: white;
+      a {
+        text-decoration: none;
+        color: $color-blue;
+        transition: $tran;
+        &:hover {
+          color: $color-dblue;
+        }
+      }
+    }
+  }
+}

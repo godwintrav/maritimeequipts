@@ -1,0 +1,3 @@
+let token = "";
+
+export {token};

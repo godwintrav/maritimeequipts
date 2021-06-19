@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::after::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: #fff url(/src/img/LoginSignup.png) center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.nav-bar {
+  background-color: #2b2a2b;
+  width: 100%;
+  height: 7vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 100%;
+}
+
+.nav-bar .content .logo {
+  margin-left: 45%;
+}
+
+.nav-bar .content .logo img {
+  height: 5vw;
+  width: 5vw;
+}
+
+main {
+  margin-top: 3%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+main .intro {
+  margin-bottom: 5%;
+  margin-left: 35%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+main .intro h1 {
+  font-size: 3vw;
+  font-weight: bold;
+  color: white;
+}
+
+main input {
+  padding: 1vw;
+  border-radius: 0.5vw;
+  outline: none;
+  width: 100%;
+  height: 3vw;
+  margin-bottom: 10%;
+  font-size: 1vw;
+  border: none;
+}
+
+main input::-webkit-input-placeholder {
+  font-size: 1vw;
+}
+
+main input:-ms-input-placeholder {
+  font-size: 1vw;
+}
+
+main input::-ms-input-placeholder {
+  font-size: 1vw;
+}
+
+main input::placeholder {
+  font-size: 1vw;
+}
+
+main input:focus {
+  -webkit-box-shadow: 0px 3px 12px 10px #00aabe;
+          box-shadow: 0px 3px 12px 10px #00aabe;
+}
+
+main .submit {
+  margin-bottom: 0;
+  margin-left: 22%;
+  background-color: #00aabe;
+  font-size: 1.5vw;
+  color: white;
+  outline: none;
+  padding: 0.5vw;
+  width: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .submit:hover {
+  background-color: #096d79;
+}
+
+main .alrdy-user {
+  margin-top: 5%;
+  margin-left: 23%;
+  font-size: 1.5vw;
+  color: white;
+}
+
+main .alrdy-user a {
+  text-decoration: none;
+  color: #00aabe;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .alrdy-user a:hover {
+  color: #096d79;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 3%;
+    margin-left: 19%;
+    margin-right: 10%;
+  }
+  main .intro {
+    margin-bottom: 5%;
+    margin-left: 35%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  main .intro h1 {
+    font-size: 3vw;
+    font-weight: bold;
+    color: white;
+  }
+  main input {
+    padding: 1vw;
+    border-radius: 0.5vw;
+    outline: none;
+    width: 25vw;
+    height: 3vw;
+    margin-bottom: 10%;
+    font-size: 1vw;
+    border: none;
+  }
+  main input::-webkit-input-placeholder {
+    font-size: 1vw;
+  }
+  main input:-ms-input-placeholder {
+    font-size: 1vw;
+  }
+  main input::-ms-input-placeholder {
+    font-size: 1vw;
+  }
+  main input::placeholder {
+    font-size: 1vw;
+  }
+  main input:focus {
+    -webkit-box-shadow: 0px 3px 12px 10px #00aabe;
+            box-shadow: 0px 3px 12px 10px #00aabe;
+  }
+  main .submit {
+    margin-bottom: 0;
+    margin-left: 18%;
+    background-color: #00aabe;
+    font-size: 1.5vw;
+    color: white;
+    outline: none;
+    padding: 0.5vw;
+    width: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  main .submit:hover {
+    background-color: #096d79;
+  }
+  main .alrdy-user {
+    margin-top: 5%;
+    margin-left: 26%;
+    font-size: 1.5vw;
+    color: white;
+  }
+  main .alrdy-user a {
+    text-decoration: none;
+    color: #00aabe;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  main .alrdy-user a:hover {
+    color: #096d79;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-bar {
+    background-color: #2b2a2b;
+    width: 100%;
+    height: 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-bar .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+  }
+  .nav-bar .content .logo {
+    margin: 0 auto;
+  }
+  .nav-bar .content .logo img {
+    height: 7vw;
+    width: 7vw;
+  }
+  main {
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  main .intro {
+    margin-bottom: 5%;
+    margin-left: 35%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  main .intro h1 {
+    font-size: 4vw;
+    font-weight: bold;
+    color: white;
+  }
+  main input {
+    padding: 1vw;
+    border-radius: 1vw;
+    outline: none;
+    width: 100%;
+    height: 6vw;
+    margin-bottom: 3%;
+    font-size: 3vw;
+    border: none;
+  }
+  main input::-webkit-input-placeholder {
+    font-size: 3vw;
+  }
+  main input:-ms-input-placeholder {
+    font-size: 3vw;
+  }
+  main input::-ms-input-placeholder {
+    font-size: 3vw;
+  }
+  main input::placeholder {
+    font-size: 3vw;
+  }
+  main input:focus {
+    -webkit-box-shadow: 0px 2px 5px 1px #00aabe;
+            box-shadow: 0px 2px 5px 1px #00aabe;
+  }
+  main .submit {
+    margin-top: 5%;
+    margin-left: 23%;
+    background-color: #00aabe;
+    font-size: 3vw;
+    color: white;
+    outline: none;
+    padding: 0.5vw;
+    width: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  main .submit:active {
+    background-color: #096d79;
+  }
+  main .alrdy-user {
+    margin-top: 5%;
+    margin-left: 20%;
+    font-size: 3vw;
+    color: white;
+  }
+  main .alrdy-user a {
+    text-decoration: none;
+    color: #00aabe;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  main .alrdy-user a:hover {
+    color: #096d79;
+  }
+}
+/*# sourceMappingURL=login.css.map */
