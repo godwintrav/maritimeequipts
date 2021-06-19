@@ -31,8 +31,8 @@ module.exports.sendOrderEmail = async (fullname, products) => {
 
         // send mail with defined transport object
         let info = await transporter.sendMail({
-            from: '"Maritime E-commerce Store" <Maritimeequipts.cn@hotmail.com>', // sender address
-            to: "stanchidi373@gmail.com", // list of receivers
+            from: '"Maritime E-commerce Store" <maritimeequipts.cn@hotmail.com>', // sender address
+            to: "maritimeequipts.cn@hotmail.com", // list of receivers
             subject: "New order notification ✔", // Subject line
             text: "New order notification ", // plain text body
             html: htmlString, // html body
