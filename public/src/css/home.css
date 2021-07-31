@@ -50,6 +50,13 @@ body {
   width: 5vw;
 }
 
+.nav-bar .content .language {
+  width: 2vw;
+  margin-left: 2%;
+  font-size: 1.5vw;
+  border: none;
+}
+
 .nav-bar .content .flag {
   margin-left: 3%;
 }
@@ -326,6 +333,20 @@ main .landing .cta:hover {
 
 main .landing .cta i {
   margin-left: 5%;
+}
+
+main .sec-1 {
+  margin-top: 10%;
+}
+
+main .sec-1 .swiper-container {
+  width: 80vw;
+  height: 30vw;
+}
+
+main .sec-1 .swiper-wrapper .swiper-slide img {
+  width: 80vw;
+  height: 30vw;
 }
 
 main .sec-2,
@@ -3356,6 +3377,97 @@ main footer p {
   word-spacing: 0.5vw;
 }
 
+main footer .img-box img {
+  width: 100%;
+  height: 40vw;
+}
+
+main footer .contact {
+  background-color: #2b2a2b;
+  height: 20vw;
+}
+
+main footer .contact .mail,
+main footer .contact .address,
+main footer .contact .phone {
+  margin-top: 5%;
+  background-color: #00aabe;
+  height: 12vw;
+  width: 5vw;
+  position: relative;
+  border-radius: 1vw;
+}
+
+main footer .contact .mail {
+  margin-right: 3%;
+}
+
+main footer .contact .mail i {
+  position: absolute;
+  color: white;
+  font-size: 3vw;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-25%, -50%);
+          transform: translate(-25%, -50%);
+}
+
+main footer .contact .mail .content {
+  width: 15vw;
+  color: white;
+  font-size: 1.3vw;
+  position: absolute;
+  top: 60%;
+  left: 14%;
+}
+
+main footer .contact .address {
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+main footer .contact .address i {
+  position: absolute;
+  color: white;
+  font-size: 3vw;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-25%, -50%);
+          transform: translate(-25%, -50%);
+}
+
+main footer .contact .address .content {
+  width: 20vw;
+  color: white;
+  font-size: 1.5vw;
+  position: absolute;
+  left: -420%;
+  top: 120%;
+}
+
+main footer .contact .phone {
+  margin-right: 3%;
+}
+
+main footer .contact .phone i {
+  position: absolute;
+  color: white;
+  font-size: 3vw;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-25%, -50%);
+          transform: translate(-25%, -50%);
+}
+
+main footer .contact .phone .content {
+  width: 20vw;
+  color: white;
+  font-size: 1.5vw;
+  position: absolute;
+  top: 50%;
+  left: 17%;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .my-container {
     margin-left: 10%;
@@ -3389,6 +3501,12 @@ main footer p {
     height: 6vw;
     width: 6vw;
   }
+  .nav-bar .content .language {
+    width: 2vw;
+    margin-left: 2%;
+    font-size: 1.5vw;
+    border: none;
+  }
   .nav-bar .content .search-bar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3399,7 +3517,7 @@ main footer p {
     border: none;
     outline: none;
     height: 4vw;
-    width: 30vw;
+    width: 25vw;
     padding: 0.5vw;
     border-bottom-left-radius: 0.5vw;
     border-top-left-radius: 0.5vw;
@@ -7150,11 +7268,89 @@ main footer p {
     margin-top: 10%;
     background-color: #2b2a2b;
     text-align: center;
-    height: 10vw;
+    height: 12vw;
   }
   main footer p {
     color: white;
     word-spacing: 0.5vw;
+  }
+  main footer .img-box img {
+    width: 100vw;
+    height: 40vw;
+  }
+  main footer .contact {
+    background-color: #2b2a2b;
+    height: 40vw;
+  }
+  main footer .contact .mail,
+  main footer .contact .address,
+  main footer .contact .phone {
+    margin-top: 5%;
+    background-color: #00aabe;
+    height: 22vw;
+    width: 3vw;
+    position: relative;
+    border-radius: 1vw;
+  }
+  main footer .contact .address {
+    margin-left: 3%;
+  }
+  main footer .contact .address i {
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-25%, -50%);
+            transform: translate(-25%, -50%);
+  }
+  main footer .contact .address .content {
+    width: 25vw;
+    color: white;
+    font-size: 2vw;
+    position: absolute;
+    left: -500%;
+    top: 210%;
+  }
+  main footer .contact .mail {
+    margin-right: 3%;
+  }
+  main footer .contact .mail i {
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-25%, -50%);
+            transform: translate(-25%, -50%);
+  }
+  main footer .contact .mail .content {
+    width: 15vw;
+    color: white;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 60%;
+    left: 8%;
+  }
+  main footer .contact .phone {
+    margin-right: 3%;
+  }
+  main footer .contact .phone i {
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-25%, -50%);
+            transform: translate(-25%, -50%);
+  }
+  main footer .contact .phone .content {
+    width: 20vw;
+    color: white;
+    font-size: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 15%;
   }
 }
 /*# sourceMappingURL=home.css.map */

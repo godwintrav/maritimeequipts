@@ -11,6 +11,10 @@ const path = require('path')
 //set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
+//register view engine
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'public/src/html'));
+
 
 //MIDDLEWARES
 // app.use(cors());
@@ -22,6 +26,12 @@ app.use(cookieParser());
 //routes
 app.use("/api/auth",authRoutes);
 app.use("/api/order",orderRoutes);
+
+app.get("/src/html/invoice.html", (req, res) => {
+    const cookies = req.cookies;
+    const products = cookies.products;
+    res.render('invoice', {products});
+});
 
 
 //database connection

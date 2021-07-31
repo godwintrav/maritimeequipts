@@ -18,7 +18,7 @@ checkoutBtn.addEventListener('click', () => {
     })
     .then(function(data) {
       console.log(data);
-      window.location.href = "/src/html/checkout.html";
+      window.location.href = "/src/html/invoice.html";
     }).catch(err => {
       console.log(err);
       
@@ -62,7 +62,8 @@ checkoutBtn.addEventListener('click', () => {
         let price = priceWsign.substring(1);
         item.name = name;
         item.price = price;
-        products.push({name, price});
+        quantity = 1;
+        products.push({name, price, quantity});
         console.log(products);
 
         let id = Math.floor(Math.random());

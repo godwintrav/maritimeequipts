@@ -2,7 +2,7 @@ const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 const errorController = require('./errorController');
 
-const maxAge = 3 * 24 * 60 * 60;
+const maxAge = 365 * 24 * 60 * 60;
 
 //Create JWT
 const createToken = (id, scopes) => {
@@ -23,8 +23,8 @@ module.exports.signup_post = async (req, res) => {
         const token = createToken(user._id, ["user"]);
         //console.log(user._id);
         //remember to add secure when in production
-        res.cookie(token_name, token, { httpOnly: true});
-        res.cookie("username", username, { httpOnly: true, overwrite: true});
+        res.cookie(token_name, token, { httpOnly: true, maxAge: maxAge * 1000, secure: true});
+        res.cookie("username", username, { httpOnly: true, overwrite: true, maxAge: maxAge * 1000, secure: true});
         res.status(201).json({ user: user._id, token: token });
     }catch(err){
         console.log(err);
@@ -42,8 +42,8 @@ module.exports.login_post = async (req, res) => {
         let username = user.firstName + " " + user.lastName;
         const token = createToken(user._id, ["user"]);
         //remember to add secure when in production
-        res.cookie(token_name, token, { httpOnly: true});
-        res.cookie("username", username, { httpOnly: true, overwrite: true});
+        res.cookie(token_name, token, { httpOnly: true, maxAge: maxAge * 1000, secure: true});
+        res.cookie("username", username, { httpOnly: true, overwrite: true, maxAge: maxAge * 1000, secure: true});
         res.status(200).json({ user: user._id, token: token });
     }catch(err){
         console.log(err);

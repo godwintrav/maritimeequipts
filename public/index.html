@@ -35,20 +35,31 @@
 
       <form class="inputs row" action="/src/html/home.html" method="POST">
         <div class="email col-xs-12 col-sm-12 col-md-12">
-          <input type="  text" id="email" name="email" placeholder="Email" required />
+          <input
+            type="  text"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
         </div>
         <div class="pwd col-xs-12 col-sm-12 col-md-12">
-          <input type="password" id="pwd" name="pwd" placeholder="Password" required />
+          <input
+            type="password"
+            id="pwd"
+            name="pwd"
+            placeholder="Password"
+            required
+          />
         </div>
 
         <input class="submit" type="button" value="Log in" />
-        
       </form>
-      <div style="text-align: center;" class="form-group">
-        <b><span class="text-success" id="success-message"></span><b>
+      <div style="text-align: center" class="form-group log-err">
+        <span class="text-success" id="success-message"></span>
       </div>
-      <div style="text-align: center;" class="form-group">
-          <b><span class="text-danger" id="error-message"></span><b>
+      <div style="text-align: center" class="form-group log-suc">
+        <span class="text-danger" id="error-message"></span>
       </div>
       <p class="alrdy-user">
         No account yet? <a href="/src/html/signup.html">Sign Up</a>

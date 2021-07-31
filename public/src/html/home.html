@@ -17,6 +17,11 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/src/css/home.css" />
   </head>
   <body>
@@ -26,6 +31,16 @@
           <img src="/src/img/logo.svg" alt="" />
         </div>
 
+        <div class="flag">
+          <img src="/src/img/Flag-China.jpg" alt="" />
+        </div>
+
+        <div class="language">
+          <select name="Language" id="">
+            <option value="1">English</option>
+            <option value="1">Chinese</option>
+          </select>
+        </div>
         <div class="search-bar">
           <input class="input" type="text" placeholder="Search product(s)" />
           <i id="search" class="fas fa-search"></i>
@@ -46,9 +61,6 @@
           <i class="fas fa-shopping-cart"></i>
           <span>Cart</span>
         </div>
-        <div class="flag">
-          <img src="/src/img/Flag-China.jpg" alt="" />
-        </div>
       </div>
       <div class="cart">
         <div class="cart-buttons-container">
@@ -67,6 +79,30 @@
           </button>
         </div>
       </section>
+
+      <div class="sec-1">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="/src/img/slide-1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/src/img/slide-2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/src/img/slide-3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/src/img/slide-4.jpg" alt="">
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+
       <section class="sec-2 my-container">
         <div class="steel">
           <div class="intro">
@@ -77,7 +113,7 @@
               <img src="/src/img/steel1.jpeg" alt="" />
               <div class="desc">
                 <p class="title">Stainless steel</p>
-                <span class="price">$10.99</span>
+                <span class="price">$70,000</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -88,7 +124,7 @@
               <img src="/src/img/steel7.jpeg" alt="" />
               <div class="desc">
                 <p class="title">Carbon Steel</p>
-                <span class="price">$18.99</span>
+                <span class="price">$50,000</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -99,7 +135,7 @@
               <img src="/src/img/steel5.jpeg" alt="" />
               <div class="desc">
                 <p class="title">Alloy Steel</p>
-                <span class="price">$8.99</span>
+                <span class="price">$60,000</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -110,7 +146,7 @@
               <img src="/src/img/steel7.jpeg" alt="" />
               <div class="desc">
                 <p class="title">Tool Steel</p>
-                <span class="price">$28.99</span>
+                <span class="price">$55,000</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -121,7 +157,7 @@
               <img src="/src/img/steel8.jpeg" alt="" />
               <div class="desc">
                 <p class="title">Carbon Steel</p>
-                <span class="price">$23.99</span>
+                <span class="price">$80,000</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -132,7 +168,7 @@
               <img src="/src/img/steel9.jpeg" alt="" />
               <div class="desc">
                 <p class="title">Stainless Steel</p>
-                <span class="price">$22.99</span>
+                <span class="price">$100,000</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -143,7 +179,7 @@
               <img src="/src/img/steel10.jpeg" alt="" />
               <div class="desc">
                 <p class="title">Tool Steel</p>
-                <span class="price">$21.99</span>
+                <span class="price">$80,000</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -154,7 +190,7 @@
               <img src="/src/img/steel11.jpeg" alt="" />
               <div class="desc">
                 <p class="title">Alloy Steel</p>
-                <span class="price">$19.99</span>
+                <span class="price">$75,000</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -165,7 +201,7 @@
               <img src="/src/img/steel12.jpeg" alt="" />
               <div class="desc">
                 <p class="title">Carbon Steel</p>
-                <span class="price">$12.99</span>
+                <span class="price">$70,000</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -176,7 +212,7 @@
               <img src="/src/img/steel13.jpeg" alt="" />
               <div class="desc">
                 <p class="title">Stainless Steel</p>
-                <span class="price">$19.99</span>
+                <span class="price">$100,000</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -187,7 +223,7 @@
               <img src="/src/img/steel21.jpeg" alt="" />
               <div class="desc">
                 <p class="title">Alloy Steel</p>
-                <span class="price">$21.99</span>
+                <span class="price">$80,000</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -198,7 +234,7 @@
               <img src="/src/img/steel20.jpeg" alt="" />
               <div class="desc">
                 <p class="title">Tool Steel</p>
-                <span class="price">$16.99</span>
+                <span class="price">$95,000</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -219,7 +255,7 @@
               <img src="/src/img/bolt1.jpeg" alt="" />
               <div class="desc">
                 <p class="title">Hexagonal bolt</p>
-                <span class="price">$11.99</span>
+                <span class="price">$31.99</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -230,7 +266,7 @@
               <img src="/src/img/bolt2.jpeg"" alt="" />
               <div class="desc">
                 <p class="title">Hexagonal bolt</p>
-                <span class="price">$10.99</span>
+                <span class="price">$40.99</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -241,7 +277,7 @@
               <img src="/src/img/bolt3.jpeg"" alt="" />
               <div class="desc">
                 <p class="title">Hexagonal bolt</p>
-                <span class="price">$15.99</span>
+                <span class="price">$35.99</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -252,7 +288,62 @@
               <img src="/src/img/screw bolt1.jpeg"" alt="" />
               <div class="desc">
                 <p class="title">Screw bolt</p>
-                <span class="price">$18.99</span>
+                <span class="price">$41.99</span>
+                <button class="add">
+                  Add to cart
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-5 col-xs-4 col-sm-4 col-md-3">
+              <img src="/src/img/bolt4.jpeg" alt="" />
+              <div class="desc">
+                <p class="title">M16</p>
+                <span class="price">$32.99</span>
+                <button class="add">
+                  Add to cart
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-6 col-xs-4 col-sm-4 col-md-3">
+              <img src="/src/img/bolt5.jpeg" alt="" />
+              <div class="desc">
+                <p class="title">M12</p>
+                <span class="price">$43.99</span>
+                <button class="add">
+                  Add to cart
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-7 col-xs-4 col-sm-4 col-md-3">
+              <img src="/src/img/bolt6.jpeg" alt="" />
+              <div class="desc">
+                <p class="title">M9/7</p>
+                <span class="price">$35.99</span>
+                <button class="add">
+                  Add to cart
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-8 col-xs-4 col-sm-4 col-md-3">
+              <img src="/src/img/bolt7.jpeg" alt="" />
+              <div class="desc">
+                <p class="title">6/9</p>
+                <span class="price">$45.99</span>
+                <button class="add">
+                  Add to cart
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-9 col-xs-4 col-sm-4 col-md-3">
+              <img src="/src/img/bolt9.jpeg" alt="" />
+              <div class="desc">
+                <p class="title">4/8</p>
+                <span class="price">$43.99</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -272,8 +363,8 @@
             <div class="item-1 col-xs-4 col-sm-4 col-md-3">
               <img src="/src/img/mboard1.jpeg" alt="" />
               <div class="desc">
-                <p class="title">Motherboard</p>
-                <span class="price">$99.99</span>
+                <p class="title">0J23e815 T27 Chip23</p>
+                <span class="price">$120,000</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -283,8 +374,8 @@
             <div class="item-2 col-xs-4 col-sm-4 col-md-3">
               <img src="/src/img/mboard2.jpeg" alt="" />
               <div class="desc">
-                <p class="title">Motherboard</p>
-                <span class="price">$149.99</span>
+                <p class="title">0JR81512 F2 Chip9</p>
+                <span class="price">$149,000</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -294,8 +385,8 @@
             <div class="item-3 col-xs-4 col-sm-4 col-md-3">
               <img src="/src/img/mboard3.jpeg" alt="" />
               <div class="desc">
-                <p class="title">Motherboard</p>
-                <span class="price">$199.99</span>
+                <p class="title">0JR815 T2 Chip10</p>
+                <span class="price">$199,000</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -305,8 +396,52 @@
             <div class="item-4 col-xs-4 col-sm-4 col-md-3">
               <img src="/src/img/mboard4.jpeg" alt="" />
               <div class="desc">
-                <p class="title">Motherboard</p>
-                <span class="price">$299.99</span>
+                <p class="title">0JR815 T2 Chip9</p>
+                <span class="price">$299,000</span>
+                <button class="add">
+                  Add to cart
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-5 col-xs-4 col-sm-4 col-md-3">
+              <img src="/src/img/mboard5.jpeg" alt="" />
+              <div class="desc">
+                <p class="title">IBM 5150 motherboard 64-256</p>
+                <span class="price">$150,000</span>
+                <button class="add">
+                  Add to cart
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-6 col-xs-4 col-sm-4 col-md-3">
+              <img src="/src/img/mboard6.jpeg" alt="" />
+              <div class="desc">
+                <p class="title">P4BWA ATX motherboard</p>
+                <span class="price">$170,000</span>
+                <button class="add">
+                  Add to cart
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-7 col-xs-4 col-sm-4 col-md-3">
+              <img src="/src/img/mboard7.jpeg" alt="" />
+              <div class="desc">
+                <p class="title">Socket 370 with BX440</p>
+                <span class="price">$130,000</span>
+                <button class="add">
+                  Add to cart
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-8 col-xs-4 col-sm-4 col-md-3">
+              <img src="/src/img/mboard8.jpeg" alt="" />
+              <div class="desc">
+                <p class="title">601CF jetway</p>
+                <span class="price">$250,000</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -465,10 +600,10 @@
             <h1>Washers</h1>
           </div>
           <div class="items row">
-            <div class="item-1 col-xs-4 col-sm-4 col-md-4">
+            <div class="item-1 col-xs-4 col-sm-4 col-md-3">
               <img src="/src/img/washers.jpeg" alt="" />
               <div class="desc">
-                <p class="title">Washer</p>
+                <p class="title">1/4 screw washer</p>
                 <span class="price">$50.99</span>
                 <button class="add">
                   Add to cart
@@ -476,22 +611,77 @@
                 </button>
               </div>
             </div>
-            <div class="item-2 col-xs-4 col-sm-4 col-md-4">
+            <div class="item-2 col-xs-4 col-sm-4 col-md-3">
               <img src="/src/img/washers2.jpeg" alt="" />
               <div class="desc">
-                <p class="title">Washer</p>
-                <span class="price">$90.99</span>
+                <p class="title">3/8 screw steel flat washer</p>
+                <span class="price">$30.99</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
                 </button>
               </div>
             </div>
-            <div class="item-3 col-xs-4 col-sm-4 col-md-4">
+            <div class="item-3 col-xs-4 col-sm-4 col-md-3">
               <img src="/src/img/washers3.jpeg" alt="" />
               <div class="desc">
-                <p class="title">Washer</p>
-                <span class="price">$65.99</span>
+                <p class="title">3/8 fitting bolt washer</p>
+                <span class="price">$25.99</span>
+                <button class="add">
+                  Add to cart
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-4 col-xs-4 col-sm-4 col-md-3">
+              <img src="/src/img/washers3.jpeg" alt="" />
+              <div class="desc">
+                <p class="title">Galvanized M9 washers</p>
+                <span class="price">$45.99</span>
+                <button class="add">
+                  Add to cart
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-5 col-xs-4 col-sm-4 col-md-3">
+              <img src="/src/img/washer4.jpeg" alt="" />
+              <div class="desc">
+                <p class="title">M8x35mm cup head washer</p>
+                <span class="price">$35.99</span>
+                <button class="add">
+                  Add to cart
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-6 col-xs-4 col-sm-4 col-md-3">
+              <img src="/src/img/washer5.jpeg" alt="" />
+              <div class="desc">
+                <p class="title">Galvanized Z9 washers</p>
+                <span class="price">$25.99</span>
+                <button class="add">
+                  Add to cart
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-7 col-xs-4 col-sm-4 col-md-3">
+              <img src="/src/img/washer6.jpeg" alt="" />
+              <div class="desc">
+                <p class="title">Galvanized M9 washers</p>
+                <span class="price">$35.99</span>
+                <button class="add">
+                  Add to cart
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-8 col-xs-4 col-sm-4 col-md-3">
+              <img src="/src/img/washer7.jpeg" alt="" />
+              <div class="desc">
+                <p class="title">Flat F9 washers</p>
+                <span class="price">$35.99</span>
                 <button class="add">
                   Add to cart
                   <i class="fas fa-shopping-cart"></i>
@@ -661,9 +851,39 @@
       </section>
       <footer>
         <p>(c) Maritime Equipts, since 1986</p>
+        <div class="img-box">
+          <img src="/src/img/footer-img.jpg" alt="" />
+        </div>
+
+        <div class="contact row">
+          <div class="address col">
+            <i class="fas fa-map-marker">
+              <div class="content">
+                <span
+                  >A503,TIANAN CYBER PARK, HUANGGE NORTH ROAD, LONGGANG
+                  DISTRICT, SHENZHEN CHINA</span
+                >
+              </div>
+            </i>
+          </div>
+          <div class="phone col">
+            <i class="fas fa-phone"></i>
+            <div class="content">
+              <p>+8619926832743</p>
+              <p>WeChat: LiWei19700791</p>
+            </div>
+          </div>
+          <div class="mail col">
+            <i class="fas fa-envelope"></i>
+            <div class="content">
+              <span>Maritimeequipts.cn@hotmail.com</span>
+            </div>
+          </div>
+        </div>
       </footer>
     </main>
     <script src="/src/js/home.js"></script>
     <script type="module" src="/src/js/scroll.js"></script>
+    <script type="module" src="/src/js/glider.js"></script>
   </body>
 </html>

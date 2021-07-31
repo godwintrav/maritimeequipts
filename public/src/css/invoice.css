@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::after::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 75%;
+  -webkit-box-shadow: 0vw 0.5vw 8vw 3vw #dfd9d9;
+          box-shadow: 0vw 0.5vw 8vw 3vw #dfd9d9;
+  padding: 3vw 3vw;
+  border-radius: 3vw;
+}
+
+section .items {
+  margin-bottom: 5%;
+}
+
+section .items .item-name {
+  font-size: 2vw;
+}
+
+section .items span {
+  font-size: 2vw;
+}
+
+section .items .item-quantity {
+  font-size: 2vw;
+  width: 20%;
+  border: none;
+  outline: none;
+}
+
+section .items .plus {
+  cursor: pointer;
+  margin-right: 4%;
+  color: #00aabe;
+  font-size: 2vw;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+section .items .plus:hover {
+  font-size: 2.1vw;
+}
+
+section .items .minus {
+  margin-left: 4%;
+  cursor: pointer;
+  color: #096d79;
+  font-size: 2vw;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+section .items .minus:hover {
+  font-size: 2.1vw;
+}
+
+section .items .item-price {
+  font-size: 2vw;
+}
+
+section .total-box {
+  margin-top: 10%;
+}
+
+section .total-box .desc {
+  font-size: 2vw;
+}
+
+section .total-box span {
+  font-size: 2vw;
+}
+
+section .total-box .total {
+  font-size: 2vw;
+}
+
+section .total-box .grand {
+  margin-top: 3%;
+}
+
+section .total-box .grand span {
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+section .btns {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section .btns a {
+  padding: 1vw 2vw;
+  border-radius: 1.5vw;
+  font-size: 2vw;
+}
+
+section .btns .card {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #00aabe;
+}
+
+section .btns .card:hover {
+  color: white;
+  background-color: #096d79;
+}
+
+section .btns .email {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #096d79;
+}
+
+section .btns .email:hover {
+  color: white;
+  background-color: #00aabe;
+}
+
+@media only screen and (max-width: 480px) {
+  section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    -webkit-box-shadow: 0vw 0.5vw 8vw 3vw #dfd9d9;
+            box-shadow: 0vw 0.5vw 8vw 3vw #dfd9d9;
+    padding: 4vw 4vw;
+    border-radius: 3vw;
+  }
+  section .items {
+    margin-bottom: 5%;
+  }
+  section .items .item-name {
+    font-size: 2vw;
+  }
+  section .items span {
+    font-size: 3vw;
+  }
+  section .items .item-quantity {
+    font-size: 3vw;
+    width: 20%;
+    border: none;
+    outline: none;
+  }
+  section .items .plus {
+    cursor: pointer;
+    margin-right: 4%;
+    color: #00aabe;
+    font-size: 3vw;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  section .items .plus:hover {
+    font-size: 2.1vw;
+  }
+  section .items .minus {
+    margin-left: 4%;
+    cursor: pointer;
+    color: #096d79;
+    font-size: 3vw;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  section .items .minus:hover {
+    font-size: 3.1vw;
+  }
+  section .items .item-price {
+    font-size: 2vw;
+  }
+  section .total-box {
+    margin-top: 10%;
+  }
+  section .total-box .desc {
+    font-size: 3vw;
+  }
+  section .total-box span {
+    font-size: 3vw;
+  }
+  section .total-box .total {
+    font-size: 3vw;
+  }
+  section .total-box .grand {
+    margin-top: 3%;
+  }
+  section .total-box .grand span {
+    font-weight: bold;
+    font-size: 3vw;
+  }
+  section .btns {
+    margin-top: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  section .btns a {
+    padding: 1vw 1vw;
+    border-radius: 1.5vw;
+    font-size: 2vw;
+  }
+  section .btns .card {
+    text-decoration: none;
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #00aabe;
+  }
+  section .btns .card:hover {
+    color: white;
+    background-color: #096d79;
+  }
+  section .btns .email {
+    text-decoration: none;
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #096d79;
+  }
+  section .btns .email:hover {
+    color: white;
+    background-color: #00aabe;
+  }
+}
+/*# sourceMappingURL=invoice.css.map */

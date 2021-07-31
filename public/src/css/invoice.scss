@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+$color-blue: #00aabe;
+$color-dblue: #096d79;
+$tran: all 0.3s ease-in-out;
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  &::after::before {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 75%;
+  box-shadow: 0vw 0.5vw 8vw 3vw rgb(223, 217, 217);
+  padding: 3vw 3vw;
+  border-radius: 3vw;
+  .items {
+    margin-bottom: 5%;
+    .item-name {
+      font-size: 2vw;
+    }
+    span {
+      font-size: 2vw;
+    }
+    .item-quantity {
+      font-size: 2vw;
+      width: 20%;
+      border: none;
+      outline: none;
+    }
+    .plus {
+      cursor: pointer;
+      margin-right: 4%;
+      color: $color-blue;
+      font-size: 2vw;
+      transition: $tran;
+      &:hover {
+        font-size: 2.1vw;
+      }
+    }
+    .minus {
+      margin-left: 4%;
+
+      cursor: pointer;
+      color: $color-dblue;
+      font-size: 2vw;
+      transition: $tran;
+      &:hover {
+        font-size: 2.1vw;
+      }
+    }
+    .item-price {
+      font-size: 2vw;
+    }
+  }
+
+  .total-box {
+    margin-top: 10%;
+    .desc {
+      font-size: 2vw;
+    }
+    span {
+      font-size: 2vw;
+    }
+    .total {
+      font-size: 2vw;
+    }
+    .grand {
+      margin-top: 3%;
+      span {
+        font-weight: bold;
+        font-size: 2vw;
+      }
+    }
+  }
+
+  .btns {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    a {
+      padding: 1vw 2vw;
+      border-radius: 1.5vw;
+      font-size: 2vw;
+    }
+    .card {
+      text-decoration: none;
+      color: white;
+      transition: $tran;
+      background-color: $color-blue;
+      &:hover {
+        color: white;
+        background-color: $color-dblue;
+      }
+    }
+    .email {
+      text-decoration: none;
+      color: white;
+      transition: $tran;
+
+      background-color: $color-dblue;
+      &:hover {
+        color: white;
+        background-color: $color-blue;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    box-shadow: 0vw 0.5vw 8vw 3vw rgb(223, 217, 217);
+    padding: 4vw 4vw;
+    border-radius: 3vw;
+    .items {
+      margin-bottom: 5%;
+      .item-name {
+        font-size: 2vw;
+      }
+      span {
+        font-size: 3vw;
+      }
+      .item-quantity {
+        font-size: 3vw;
+        width: 20%;
+        border: none;
+        outline: none;
+      }
+      .plus {
+        cursor: pointer;
+        margin-right: 4%;
+        color: $color-blue;
+        font-size: 3vw;
+        transition: $tran;
+        &:hover {
+          font-size: 2.1vw;
+        }
+      }
+      .minus {
+        margin-left: 4%;
+
+        cursor: pointer;
+        color: $color-dblue;
+        font-size: 3vw;
+        transition: $tran;
+        &:hover {
+          font-size: 3.1vw;
+        }
+      }
+      .item-price {
+        font-size: 2vw;
+      }
+    }
+
+    .total-box {
+      margin-top: 10%;
+      .desc {
+        font-size: 3vw;
+      }
+      span {
+        font-size: 3vw;
+      }
+      .total {
+        font-size: 3vw;
+      }
+      .grand {
+        margin-top: 3%;
+        span {
+          font-weight: bold;
+          font-size: 3vw;
+        }
+      }
+    }
+
+    .btns {
+      margin-top: 10%;
+      display: flex;
+      justify-content: space-evenly;
+      a {
+        padding: 1vw 1vw;
+        border-radius: 1.5vw;
+        font-size: 2vw;
+      }
+      .card {
+        text-decoration: none;
+        color: white;
+        transition: $tran;
+        background-color: $color-blue;
+        &:hover {
+          color: white;
+          background-color: $color-dblue;
+        }
+      }
+      .email {
+        text-decoration: none;
+        color: white;
+        transition: $tran;
+
+        background-color: $color-dblue;
+        &:hover {
+          color: white;
+          background-color: $color-blue;
+        }
+      }
+    }
+  }
+}

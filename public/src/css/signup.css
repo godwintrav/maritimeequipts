@@ -13,7 +13,7 @@
 body {
   overflow-x: hidden;
   background-color: #002f41;
-  background: #fff url(/src/img/LoginSignup.png) center center no-repeat;
+  background: #fff url(/src/img/logbg.jpg) center center no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -101,6 +101,18 @@ main input::placeholder {
 main input:focus {
   -webkit-box-shadow: 0px 3px 12px 10px #00aabe;
           box-shadow: 0px 3px 12px 10px #00aabe;
+}
+
+main .log-err span {
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin-left: 40%;
+}
+
+main .log-suc span {
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin-left: 40%;
 }
 
 main .submit {
@@ -286,6 +298,16 @@ main .alrdy-user a:hover {
   main input:focus {
     -webkit-box-shadow: 0px 2px 5px 1px #00aabe;
             box-shadow: 0px 2px 5px 1px #00aabe;
+  }
+  main .log-err span {
+    font-size: 2vw;
+    font-weight: bold;
+    margin-left: 40%;
+  }
+  main .log-suc span {
+    font-size: 2vw;
+    font-weight: bold;
+    margin-left: 40%;
   }
   main .submit {
     margin-top: 5%;

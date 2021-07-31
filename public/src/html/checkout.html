@@ -11,8 +11,21 @@
       id="bootstrap-css"
     />
     <link rel="stylesheet" href="/src/css/checkout.css" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+    crossorigin="anonymous"
+  />
   </head>
   <body>
+   <div class="overlay">
+    <div class="error">
+      <i id="exit" class="fas fa-times"></i>
+      Sorry, this payment method is currently unavailable.
+      Please try another mode of payment.
+    </div>
+   </div>
     <div class="container wrapper">
       <div class="row cart-head">
         <div class="container">
@@ -27,7 +40,7 @@
       </div>
 
       <div class="row cart-body">
-        <form id="form" class="form-horizontal" method="POST">
+        <form id="form" class="form-horizontal">
           <div
             class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-md-push-6 col-sm-push-6"
           >
@@ -152,7 +165,7 @@
                       class="form-control"
                       name="country"
                       value=""
-                      required
+                      
                     />
                   </div>
                 </div>
@@ -164,7 +177,7 @@
                       name="first_name"
                       class="form-control"
                       value=""
-                      required
+                      
                     />
                   </div>
                   <div class="span1"></div>
@@ -175,7 +188,7 @@
                       name="last_name"
                       class="form-control"
                       value=""
-                      required
+                      
                     />
                   </div>
                 </div>
@@ -187,7 +200,7 @@
                       name="address"
                       class="form-control"
                       value=""
-                      required
+                      
                     />
                   </div>
                 </div>
@@ -199,7 +212,7 @@
                       name="city"
                       class="form-control"
                       value=""
-                      required
+                      
                     />
                   </div>
                 </div>
@@ -211,7 +224,7 @@
                       name="state"
                       class="form-control"
                       value=""
-                      required
+                      
                     />
                   </div>
                 </div>
@@ -225,7 +238,7 @@
                       name="zip_code"
                       class="form-control"
                       value=""
-                      required
+                      
                     />
                   </div>
                 </div>
@@ -237,7 +250,7 @@
                       name="phone_number"
                       class="form-control"
                       value=""
-                      required
+                      
                     />
                   </div>
                 </div>
@@ -249,14 +262,14 @@
                       name="email_address"
                       class="form-control"
                       value=""
-                      required
+                      
                     />
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-md-6 col-sm-6 col-xs-12">
                     <button
-                      type="submit"
+                      type="button"
                       class="btn btn-primary btn-submit-fix"
                       id="submitBtn"
                     >
@@ -264,12 +277,7 @@
                     </button>
                     
                   </div>
-                  <div style="text-align: center;" class="form-group">
-                    <b><span class="text-success" id="success-message"></span><b>
-                  </div>
-                  <div style="text-align: center;" class="form-group">
-                    <b><span class="text-danger" id="error-message"></span><b>
-                </div>
+                  
                 </div>
               </div>
             </div>
@@ -279,7 +287,7 @@
       </div>
       <div class="row cart-footer"></div>
     </div>
-    <script src="/src/js/checkout.js"></script>
+    <script src="/src/js/card.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   </body>

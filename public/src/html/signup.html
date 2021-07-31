@@ -53,28 +53,55 @@
 
       <form class="inputs row" action="/src/html/home.html" method="POST">
         <div class="fname col-xs-12 col-sm-12 col-md-6">
-          <input type="text" id="fname" name="fname" placeholder="First Name" required/>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="First Name"
+            required
+          />
         </div>
         <div class="lname col-xs-12 col-sm-12 col-md-6">
-          <input type="text" id="lname" name="lname" placeholder="Last Name" required />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Last Name"
+            required
+          />
         </div>
         <div class="email col-xs-12 col-sm-12 col-md-6">
-          <input type="text" id="email" name="email" placeholder="Email" required/>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
         </div>
         <div class="pwd col-xs-12 col-sm-12 col-md-6">
-          <input type="password" id="pwd" name="pwd" placeholder="Password" required/>
+          <input
+            type="password"
+            id="pwd"
+            name="pwd"
+            placeholder="Password"
+            required
+          />
         </div>
 
         <input class="submit" type="button" value="Create Account" />
       </form>
-      <div style="text-align: center;" class="form-group">
-        <b><span class="text-success" id="success-message"></span><b>
+
+      <div class="form-group log-err">
+        <span class="text-success" id="success-message"></span>
       </div>
-      <div style="text-align: center;" class="form-group">
-          <b><span class="text-danger" id="error-message"></span><b>
+
+      <div class="form-group log-suc">
+        <span class="text-danger" id="error-message"></span>
       </div>
+
       <p class="alrdy-user">
-        Already have an account? <a href="/index.html">Login</a>
+        Already have an account? <a href="/index.html"></a>
       </p>
     </main>
 

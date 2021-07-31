@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check out</title>
+    <link rel="shortcut icon" href="/src/img/logo.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/src/css/invoice.css" />
+  </head>
+  <body>
+    <section>
+      <% if(products.length > 0) { %>
+        <% for(i = 0; i < products.length; i++) { %>
+            <div class="items">
+                <div class="row">
+                    <div class="col">
+                    <span class="item-name"> <%= products[i].name %> </span>
+                    </div>
+                    <div class="col qty">
+                    <i class="plus fas fa-plus" data-id="<%= i %>" data-price="<%= products[i].price %>"></i>
+                    <span class="item-quantity"> <%= products[i].quantity %> </span>
+                    <i class="minus fas fa-minus" data-id="<%= i %>" data-price="<%= products[i].price %>" ></i>
+                    </div>
+                    <div class="col">
+                    <span>$</span><span class="item-price"><%= products[i].price %></span>
+                    </div>
+                </div>
+            </div>  
+        <% } %>
+      <% } %>  
+
+      <div class="total-box">
+        <span class="desc">Total: </span>
+        <span>$</span><span class="total"></span>
+
+        <div class="grand">
+          <span>Grand Total: </span><br />
+
+          <span>$</span><span class="total"></span>
+          <span>+ $450(tax) = </span> <span>$</span>
+          <span id="g-total"></span>
+        </div>
+      </div>
+
+      <div class="btns">
+        <a href="/src/html/checkout.html" class="card"
+          >Pay with Credit/Debit Card</a
+        >
+        <button id="emailBtn" class="email">Pay through email</button>
+      </div>
+      <div style="text-align: center; margin-top: 20px;" class="form-group">
+        <b><span class="text-success" id="success-message"></span><b>
+      </div>
+      <div style="text-align: center;" class="form-group">
+        <b><span class="text-danger" id="error-message"></span><b>
+    </div>
+    </section>
+    
+
+    <script src="/src/js/invoice.js"></script>
+    <script src="/src/js/checkout.js"></script>
+  </body>
+</html>
